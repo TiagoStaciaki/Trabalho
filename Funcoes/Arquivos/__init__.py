@@ -1,0 +1,1 @@
+from .adicionar import adicionarPokemon

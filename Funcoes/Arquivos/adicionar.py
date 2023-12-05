@@ -38,28 +38,18 @@ def lerPokedex():
     
 def atualizarHP(pokemons, vindo):
     with open(caminho, 'r+', encoding='utf-8') as arquivo:
-        if vindo == 'batalha':
-            linhas = arquivo.readlines()
+        linhas = arquivo.readlines()
 
-            for i, linha in enumerate(linhas):
-                pokemon = linha.split(';')
-                if int(pokemon[1]) == int(pokemons['Número Pokedex']):
+        for i, linha in enumerate(linhas):
+            pokemon = linha.split(';')
+            if int(pokemon[1]) == int(pokemons['Número Pokedex']):
+                if vindo == 'batalha':
                     pokemon[3] = str(pokemons['HP atual'])
                     linhas[i] = ';'.join(pokemon)
-
-            arquivo.seek(0)
-            arquivo.writelines(linhas)
-            arquivo.truncate()
-
-        elif vindo == 'curar':
-            linhas = arquivo.readlines()
-
-            for i, linha in enumerate(linhas):
-                pokemon = linha.split(';')
-                if int(pokemon[1]) == int(pokemons['Número Pokedex']):
+                elif vindo == 'curar':
                     pokemon[3] = str(pokemons['HP total'])
                     linhas[i] = ';'.join(pokemon)
 
-            arquivo.seek(0)
-            arquivo.writelines(linhas)
-            arquivo.truncate()
+        arquivo.seek(0)
+        arquivo.writelines(linhas)
+        arquivo.truncate()

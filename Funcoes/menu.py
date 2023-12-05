@@ -15,6 +15,7 @@ def menu():
         print('5. Sair')
 
         opcao = int(input('Digite a opção: '))
+        print()
 
         match opcao:
             case 1:

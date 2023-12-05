@@ -1,4 +1,5 @@
 from .Arquivos.adicionar import atualizarHP, lerPokedex
+from time import sleep
 
 def recuperar():
     vindo = 'curar'
@@ -11,6 +12,10 @@ def recuperar():
     print('Digite o nome do Pokemon')
     opcao = input('Digite aqui: ')
 
+    print('Aguarde em quanto curamos seu pokemon!')
+    sleep(5)
+    print('Saúde restaurada!')
+    print()
     for pokemon in pokedex:
         if pokemon['Nome'] == opcao:
             atualizarHP(pokemon, vindo)

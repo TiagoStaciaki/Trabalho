@@ -9,4 +9,4 @@ class Treinador(Animal):
         self.equipe = equipe
 
     def __str__(self):
-        return f'Nome: {self.nome:<10} Idade: {self.idade:<10} Sexo: {self.sexo}\nExperiencia: {self.EXP:<10} Equipe {self.equipe}'
+        return f'Nome: {self.nome:<10} Idade: {self.idade:<10} Sexo: {self.sexo}\nExperiencia: {self.EXP:<10} Equipe: {self.equipe}'

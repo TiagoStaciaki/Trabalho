@@ -1,4 +1,5 @@
 from .Arquivos.adicionar import lerPokedex
+from time import sleep
 
 def listarPokemons():
 
@@ -13,3 +14,4 @@ def listarPokemons():
         print(f'Nome do segundo ataque: {pokemonData["Nome do ataque 2"]:<10} Dano: {pokemonData["Valor do ataque 2"]}')
         print('-'*23 + 'x' + '-'*23)
         print()
+        sleep(0.01)

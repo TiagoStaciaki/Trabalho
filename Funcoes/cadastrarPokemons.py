@@ -70,8 +70,9 @@ def newPokemon(pokedex):
                 break
 
 def Npokedex():
-    
     pokedex = lerPokedex()
-    UltimpP = len(pokedex) + 1
+    for pokemon in pokedex:
+        UltimoP = pokemon['Número Pokedex']
+    UltimoP = int(UltimoP) + 1
 
-    return UltimpP
+    return UltimoP

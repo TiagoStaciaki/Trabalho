@@ -3,9 +3,25 @@ from .listarPokemons import listarPokemons
 from .batalha import batalha
 from .centroPokemon import recuperar
 
+treinador = None
 pokedex = []
 
-def menu():
+def menu(opcao, Tiago, Julia, Eduardo):
+    match opcao:
+        case 1:
+            print(f'Seja bem vindo: {Tiago.nome}')
+            treinador = Tiago
+        
+        case 2:
+            print(f'Seja bem vindo: {Julia.nome}')
+            treinador = Julia
+
+        case 3:
+            print(f'Seja bem vindo: {Eduardo.nome}')
+            treinador = Eduardo
+
+        case _:
+            print('Opção inválida!')
 
     while True:
         print('1. Cadastrar Pokemon')
@@ -15,7 +31,6 @@ def menu():
         print('5. Sair')
 
         opcao = int(input('Digite a opção: '))
-        print()
 
         match opcao:
             case 1:

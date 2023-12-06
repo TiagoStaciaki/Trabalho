@@ -30,7 +30,7 @@ def lerPokedex():
             pokedex['Nome do ataque 1'] = pokemon[7]
             pokedex['Valor do ataque 1'] = pokemon[8]
             pokedex['Nome do ataque 2'] = pokemon[9]
-            pokedex['Valor do ataque 2'] = pokemon[10]
+            pokedex['Valor do ataque 2'] = pokemon[10].replace('\n', '')
         
             pokedexL.append(pokedex)
         

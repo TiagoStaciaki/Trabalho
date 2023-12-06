@@ -1,6 +1,8 @@
 from .Arquivos.adicionar import lerPokedex, atualizarHP
 from .listarPokemons import listarPokemons
 from time import sleep
+from random import randint
+
 vida = True
 
 def batalha():
@@ -20,12 +22,15 @@ def batalha():
         case 2:
             pPokemon, sPokemon = selecionar(dadosPokemons)
 
-    if pPokemon['HP atual'] == 0 or sPokemon['HP atual'] == 0:
-        print('Um dos pokemons não esta possibilitado à lutar')
-
-    else:
+    if int(pPokemon['HP atual']) == 0 or int(sPokemon['HP atual']) == 0:
+        if int(pPokemon['HP atual']) == 0:
+            print(f'{pPokemon["Nome"]} está incapacitado para lutar!')
+        
+        if int(sPokemon['HP atual']) == 0:
+            print(f'{sPokemon["Nome"]} está incapacitado para lutar!')
+    else: 
         while vida:
-            if pPokemon['Iniciativa'] > sPokemon['Iniciativa']:
+            if int(pPokemon['Iniciativa']) > int(sPokemon['Iniciativa']):
                 print(f'A batalha começa!')
                 sleep(3)
                 while True:
@@ -33,9 +38,11 @@ def batalha():
                     if vida == False:
                         break
                     asPokemon(sPokemon, pPokemon)
+                    if vida == False:
+                        break
                 break
 
-            elif sPokemon['Iniciativa'] > pPokemon['Iniciativa']:
+            elif int(sPokemon['Iniciativa']) > int(pPokemon['Iniciativa']):
                 print(f'A batalha começa!')
                 sleep(3)
                 while True:
@@ -43,7 +50,20 @@ def batalha():
                     if vida == False:
                         break
                     apPokemon(pPokemon, sPokemon)
+                    if vida == False:
+                        break
                 break
+
+            elif pPokemon['Iniciativa'] == sPokemon['Iniciativa']:
+                aleatorio = randint(1, 2)
+                if aleatorio == 1:
+                    pPokemon['Iniciativa'] = int(pPokemon['Iniciativa']) + 1
+                    continue
+
+                elif aleatorio == 2:
+                    sPokemon['Iniciativa'] = int(pPokemon['Iniciativa']) + 1
+                    continue
+
         vida = True
 
 def apPokemon(pPokemon, sPokemon):
@@ -51,42 +71,46 @@ def apPokemon(pPokemon, sPokemon):
     global vida
     print(f'Vez de {pPokemon["Nome"]}')
     print('Ataques disponiveis: ')
-    print(f'{pPokemon["Nome do ataque 1"]:<25} {pPokemon["Nome do ataque 2"]}')
+    print(f'1 - {pPokemon["Nome do ataque 1"]:<25} 2 - {pPokemon["Nome do ataque 2"]}')
 
-    opcao = input('Digite o aqui: ')
+    opcao = int(input('Digite aqui: '))
     
-    if opcao == pPokemon['Nome do ataque 1']:
-    
+    if opcao == 1:
         print(f'{sPokemon["Nome"]} sofreu {pPokemon["Valor do ataque 1"]} de dano')
         sPokemon['HP atual'] = int(sPokemon['HP atual']) - int(pPokemon['Valor do ataque 1'])
-        print(f'{sPokemon["Nome"]} está com {sPokemon["HP atual"]}')
         atualizarHP(sPokemon, vindo)
+        sleep(1)
 
         if int(sPokemon['HP atual']) <= 0:
             sPokemon['HP atual'] = 0
+            print(f'{sPokemon["Nome"]} está com {sPokemon["HP atual"]} de vida')
+            sleep(1)
             atualizarHP(sPokemon, vindo)
             print(f'{sPokemon["Nome"]} foi derrotado')
             print(f'{pPokemon["Nome"]} venceu!')
             vida = False
-        
-        else:
+
+        elif int(sPokemon['HP atual']) > 0:
+            print(f'{sPokemon["Nome"]} está com {sPokemon["HP atual"]} de vida')
             vida = True
 
-    elif opcao == pPokemon['Nome do ataque 2']:
-
-        print(f'{pPokemon["Nome"]} sofreu {sPokemon["Valor do ataque 2"]} de dano')
+    elif opcao == 2:
+        print(f'{sPokemon["Nome"]} sofreu {pPokemon["Valor do ataque 2"]} de dano')
         sPokemon['HP atual'] = int(sPokemon['HP atual']) - int(pPokemon['Valor do ataque 2'])
-        print(f'{sPokemon["Nome"]} está com {sPokemon["HP atual"]}')
         atualizarHP(sPokemon, vindo)
+        sleep(1)
 
         if int(sPokemon['HP atual']) <= 0:
             sPokemon['HP atual'] = 0
+            print(f'{sPokemon["Nome"]} está com {sPokemon["HP atual"]} de vida')
+            sleep(1)
             atualizarHP(sPokemon, vindo)
-            print(f'{pPokemon["Nome"]} foi derrotado')
-            print(f'{sPokemon["Nome"]} venceu!')
+            print(f'{sPokemon["Nome"]} foi derrotado')
+            print(f'{pPokemon["Nome"]} venceu!')
             vida = False
-        
-        else:
+                
+        elif int(sPokemon['HP atual']) > 0:
+            print(f'{sPokemon["Nome"]} está com {sPokemon["HP atual"]} de vida')
             vida = True
     
     return vida
@@ -96,42 +120,46 @@ def asPokemon(sPokemon, pPokemon):
     global vida
     print(f'Vez de {sPokemon["Nome"]}')
     print('Ataques disponiveis: ')
-    print(f'{sPokemon["Nome do ataque 1"]:<25} {sPokemon["Nome do ataque 2"]}')
+    print(f'1 - {sPokemon["Nome do ataque 1"]:<25} 2 - {sPokemon["Nome do ataque 2"]}')
 
-    opcao = input('Digite o nome do ataque: ')
+    opcao = int(input('Digite o nome do ataque: '))
     
-    if opcao == sPokemon['Nome do ataque 1']:
-
+    if opcao == 1:
         print(f'{pPokemon["Nome"]} sofreu {sPokemon["Valor do ataque 1"]} de dano')
         pPokemon['HP atual'] = int(pPokemon['HP atual']) - int(sPokemon['Valor do ataque 1'])
-        print(f'{pPokemon["Nome"]} está com {pPokemon["HP atual"]} de vida')
         atualizarHP(pPokemon, vindo)
+        sleep(1)
 
         if int(pPokemon['HP atual']) <= 0:
             pPokemon['HP atual'] = 0
+            print(f'{pPokemon["Nome"]} está com {pPokemon["HP atual"]} de vida')
+            sleep(1)
             atualizarHP(pPokemon, vindo)
             print(f'{pPokemon["Nome"]} foi derrotado')
             print(f'{sPokemon["Nome"]} venceu!')
             vida = False
-        
-        else:
+                
+        elif int(pPokemon['HP atual']) > 0:
+            print(f'{pPokemon["Nome"]} está com {pPokemon["HP atual"]} de vida')
             vida = True
-    
-    elif opcao == sPokemon['Nome do ataque 2']:
 
+    elif opcao == 2:
         print(f'{pPokemon["Nome"]} sofreu {sPokemon["Valor do ataque 2"]} de dano')
         pPokemon['HP atual'] = int(pPokemon['HP atual']) - int(sPokemon['Valor do ataque 2'])
-        print(f'{pPokemon["Nome"]} está com {pPokemon["HP atual"]}')
         atualizarHP(pPokemon, vindo)
-
+        sleep(1)
+        
         if int(pPokemon['HP atual']) <= 0:
             pPokemon['HP atual'] = 0
+            print(f'{pPokemon["Nome"]} está com {pPokemon["HP atual"]} de vida')
+            sleep(1)
             atualizarHP(pPokemon, vindo)
             print(f'{pPokemon["Nome"]} foi derrotado')
             print(f'{sPokemon["Nome"]} venceu!')
             vida = False
-        
-        else:
+
+        elif int(pPokemon['HP atual']) > 0:
+            print(f'{pPokemon["Nome"]} está com {pPokemon["HP atual"]} vida')
             vida = True
     
     return vida

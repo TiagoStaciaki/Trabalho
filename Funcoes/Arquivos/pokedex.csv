@@ -1,2 +1,141 @@
-Pikachu;1;100;0;50;Elétrico;Nenhum;Bola de choque;70;Nenhum;0
-Charmander;2;100;30;30;Fogo;Nenhum;Garra do dragão;50;Chama;100
+Bulbasaur;001;45;45;5;Grass;Poison;Tackle;10;Vine Whip;15
+Ivysaur;002;60;60;4;Grass;Poison;Vine Whip;15;Razor Leaf;20
+Venusaur;003;80;80;3;Grass;Poison;Vine Whip;15;Solar Beam;25
+Charmander;004;39;39;7;Fire;;Scratch;8;Ember;12
+Charmeleon;005;58;58;6;Fire;;Ember;12;Flamethrower;18
+Charizard;006;78;78;5;Fire;Flying;Wing Attack;15;Fire Blast;25
+Squirtle;007;44;44;6;Water;;Tackle;10;Water Gun;15
+Wartortle;008;59;59;5;Water;;Water Gun;15;Hydro Pump;22
+Blastoise;009;79;79;4;Water;;Water Gun;15;Hydro Pump;22
+Caterpie;010;45;45;7;Bug;;Tackle;10;String Shot;8
+Metapod;011;50;50;4;Bug;;Harden;5;Bug Bite;12
+Butterfree;012;60;60;5;Bug;Flying;Confusion;15;Air Slash;20
+Weedle;013;40;40;8;Bug;Poison;Poison Sting;10;String Shot;8
+Kakuna;014;45;45;6;Bug;Poison;Poison Sting;10;Harden;5
+Beedrill;015;65;65;5;Bug;Poison;Poison Jab;18;Twineedle;20
+Pidgey;016;40;40;7;Normal;Flying;Tackle;10;Gust;15
+Pidgeotto;017;63;63;6;Normal;Flying;Quick Attack;12;Aerial Ace;20
+Pidgeot;018;83;83;5;Normal;Flying;Wing Attack;15;Hurricane;25
+Rattata;019;30;30;9;Normal;;Tackle;10;Quick Attack;12
+Raticate;020;55;55;6;Normal;;Hyper Fang;20;Super Fang;18
+Spearow;021;40;40;7;Normal;Flying;Peck;12;Aerial Ace;20
+Fearow;022;65;65;5;Normal;Flying;Drill Peck;18;Sky Attack;25
+Ekans;023;35;35;8;Poison;;Wrap;10;Poison Sting;12
+Arbok;024;60;60;5;Poison;;Bite;15;Gunk Shot;22
+Pikachu;025;35;35;9;Electric;;Quick Attack;12;Thunderbolt;20
+Raichu;026;60;60;8;Electric;;Thunder Shock;15;Thunder Punch;22
+Sandshrew;027;50;50;6;Ground;;Scratch;10;Dig;18
+Sandslash;028;75;75;5;Ground;;Slash;18;Earthquake;25
+Nidoran♀;029;55;55;5;Poison;;Scratch;12;Poison Sting;15
+Nidorina;030;70;70;4;Poison;;Bite;15;Double Kick;20
+Nidoqueen;031;90;90;3;Poison;Ground;Poison Jab;18;Earth Power;25
+Nidoran♂;032;46;46;8;Poison;;Peck;12;Double Kick;20
+Nidorino;033;61;61;6;Poison;;Poison Jab;18;Horn Attack;15
+Nidoking;034;81;81;5;Poison;Ground;Megahorn;25;Earthquake;25
+Clefairy;035;70;70;5;Fairy;;Pound;12;Moonblast;22
+Clefable;036;95;95;4;Fairy;;Double Slap;15;Dazzling Gleam;20
+Vulpix;037;38;38;7;Fire;;Ember;12;Flamethrower;18
+Ninetales;038;73;73;6;Fire;;Quick Attack;15;Fire Blast;25
+Jigglypuff;039;115;115;4;Normal;Fairy;Pound;12;Play Rough;22
+Wigglytuff;040;140;140;3;Normal;Fairy;Feint Attack;18;Hyper Beam;25
+Zubat;041;40;40;9;Poison;Flying;Leech Life;12;Air Cutter;18
+Golbat;042;75;75;6;Poison;Flying;Wing Attack;15;Poison Fang;20
+Oddish;043;45;45;7;Grass;Poison;Absorb;10;Acid;15
+Gloom;044;60;60;6;Grass;Poison;Mega Drain;18;Petal Blizzard;22
+Vileplume;045;75;75;5;Grass;Poison;Petal Dance;25;Sludge Bomb;20
+Paras;046;35;35;8;Bug;Grass;Scratch;10;Leech Life;12
+Parasect;047;60;60;6;Bug;Grass;Fury Cutter;15;X-Scissor;20
+Venonat;048;60;60;6;Bug;Poison;Tackle;10;Psybeam;18
+Venomoth;049;70;70;5;Bug;Poison;Confusion;15;Bug Buzz;22
+Diglett;050;35;35;9;Ground;;Scratch;10;Earthquake;25
+Dugtrio;051;80;80;5;Ground;;Mud-Slap;15;Earthquake;25
+Meowth;052;40;40;8;Normal;;Scratch;10;Pay Day;15
+Persian;053;65;65;6;Normal;;Bite;15;Hyper Beam;25
+Psyduck;054;50;50;5;Water;;Scratch;10;Water Gun;15
+Golduck;055;80;80;4;Water;;Confusion;15;Hydro Pump;22
+Mankey;056;40;40;9;Fighting;;Scratch;10;Karate Chop;18
+Primeape;057;65;65;6;Fighting;;Low Kick;18;Cross Chop;25
+Growlithe;058;55;55;7;Fire;;Bite;15;Flamethrower;18
+Arcanine;059;90;90;5;Fire;;Ember;12;Fire Blast;25
+Poliwag;060;40;40;7;Water;;Bubble;10;Water Gun;15
+Poliwhirl;061;65;65;6;Water;;Bubble;10;Water Gun;15
+Poliwrath;062;90;90;4;Water;Fighting;Bubble;10;Dynamic Punch;25
+Abra;063;25;25;15;Psychic;;Teleport;5;Psybeam;18
+Kadabra;064;40;40;8;Psychic;;Confusion;15;Psychic;22
+Alakazam;065;55;55;7;Psychic;;Confusion;15;Psycho Cut;20
+Machop;066;70;70;7;Fighting;;Low Kick;18;Karate Chop;22
+Machoke;067;80;80;5;Fighting;;Low Kick;18;Submission;25
+Machamp;068;90;90;4;Fighting;;Karate Chop;22;Cross Chop;25
+Bellsprout;069;50;50;6;Grass;Poison;Vine Whip;15;Acid;15
+Weepinbell;070;65;65;5;Grass;Poison;Razor Leaf;18;Sludge Bomb;20
+Victreebel;071;80;80;4;Grass;Poison;Razor Leaf;18;Leaf Blade;22
+Tentacool;072;40;40;8;Water;Poison;Poison Sting;12;Water Gun;15
+Tentacruel;073;80;25;5;Water;Poison;Poison Jab;18;Hydro Pump;22
+Geodude;074;40;40;6;Rock;Ground;Tackle;10;Rock Throw;15
+Graveler;075;55;0;5;Rock;Ground;Rock Throw;15;Earthquake;25
+Golem;076;80;80;4;Rock;Ground;Rock Slide;18;Stone Edge;22
+Ponyta;077;50;50;7;Fire;;Ember;12;Stomp;18
+Rapidash;078;65;65;6;Fire;;Ember;12;Fire Blast;25
+Slowpoke;079;90;90;4;Water;Psychic;Water Gun;15;Confusion;15
+Slowbro;080;95;95;3;Water;Psychic;Water Gun;15;Psychic;22
+Magnemite;081;25;25;10;Electric;Steel;Thunder Shock;15;Magnet Bomb;18
+Magneton;082;50;50;7;Electric;Steel;Spark;18;Flash Cannon;22
+Farfetch'd;083;52;52;8;Normal;Flying;Peck;12;Slash;18
+Doduo;084;35;35;9;Normal;Flying;Quick Attack;12;Drill Peck;20
+Dodrio;085;60;60;6;Normal;Flying;Peck;12;Tri Attack;20
+Seel;086;65;65;6;Water;;Headbutt;15;Aqua Tail;18
+Dewgong;087;90;90;4;Water;Ice;Ice Shard;12;Blizzard;25
+Grimer;088;80;80;5;Poison;;Pound;12;Sludge Bomb;20
+Muk;089;105;105;3;Poison;;Poison Jab;18;Gunk Shot;22
+Shellder;090;30;30;9;Water;;Tackle;10;Icicle Spear;18
+Cloyster;091;50;50;7;Water;Ice;Ice Shard;12;Hydro Pump;22
+Gastly;092;30;30;9;Ghost;Poison;Lick;12;Shadow Ball;20
+Haunter;093;45;45;8;Ghost;Poison;Shadow Claw;15;Dark Pulse;18
+Gengar;094;60;60;7;Ghost;Poison;Hex;18;Sludge Bomb;20
+Onix;095;35;35;8;Rock;Ground;Tackle;10;Rock Slide;18
+Drowzee;096;60;60;6;Psychic;;Confusion;15;Psybeam;18
+Hypno;097;85;85;4;Psychic;;Confusion;15;Psychic;22
+Krabby;098;30;30;9;Water;;Bubble;10;Vice Grip;15
+Kingler;099;55;55;6;Water;;Metal Claw;15;Crabhammer;22
+Voltorb;100;40;40;8;Electric;;Spark;15;Thunderbolt;20
+Rhyhorn;111;80;80;5;Ground;Rock;Horn Attack;15;Stomp;18
+Rhydon;112;105;105;4;Ground;Rock;Rock Slide;18;Megahorn;25
+Chansey;113;120;120;4;Normal;;Pound;12;Hyper Beam;25
+Tangela;114;65;65;6;Grass;;Vine Whip;15;Power Whip;22
+Kangaskhan;115;105;105;4;Normal;;Comet Punch;15;Dizzy Punch;20
+Horsea;116;30;30;9;Water;;Bubble;10;Water Gun;15
+Seadra;117;55;55;6;Water;;Water Gun;15;Hydro Pump;22
+Goldeen;118;45;45;7;Water;;Peck;12;Waterfall;18
+Seaking;119;80;80;5;Water;;Water Gun;15;Megahorn;25
+Staryu;120;30;30;9;Water;;Quick Attack;12;Water Gun;15
+Starmie;121;60;60;7;Water;Psychic;Water Gun;15;Psychic;22
+Mr. Mime;122;40;40;8;Psychic;Fairy;Confusion;15;Dazzling Gleam;20
+Scyther;123;70;70;6;Bug;Flying;Quick Attack;12;X-Scissor;20
+Jynx;124;65;65;7;Ice;Psychic;Pound;12;Ice Beam;22
+Electabuzz;125;65;65;7;Electric;;Thunder Shock;15;Thunder Punch;20
+Magmar;126;65;65;7;Fire;;Ember;12;Fire Punch;20
+Pinsir;127;65;65;7;Bug;;Vice Grip;15;X-Scissor;20
+Tauros;128;75;75;5;Normal;;Tackle;10;Hyper Beam;25
+Magikarp;129;20;20;10;Water;;Splash;5;Tackle;10
+Gyarados;130;95;95;4;Water;Flying;Dragon Breath;15;Hydro Pump;22
+Lapras;131;130;130;4;Water;Ice;Water Gun;15;Ice Beam;22
+Ditto;132;48;48;6;Normal;;Transform;5;Struggle;10
+Eevee;133;55;55;6;Normal;;Tackle;10;Quick Attack;12
+Vaporeon;134;130;130;4;Water;;Water Gun;15;Hydro Pump;22
+Jolteon;135;65;65;7;Electric;;Thunder Shock;15;Thunderbolt;20
+Flareon;136;65;65;7;Fire;;Ember;12;Fire Blast;25
+Porygon;137;65;65;7;Normal;;Tackle;10;Tri Attack;20
+Omanyte;138;35;35;9;Rock;Water;Water Gun;15;Ancient Power;18
+Omastar;139;70;70;6;Rock;Water;Water Gun;15;Hydro Pump;22
+Kabuto;140;30;30;9;Rock;Water;Scratch;10;Ancient Power;18
+Kabutops;141;60;60;7;Rock;Water;Scratch;10;Ancient Power;18
+Aerodactyl;142;80;80;5;Rock;Flying;Steel Wing;18;Hyper Beam;25
+Snorlax;143;160;160;2;Normal;;Lick;12;Hyper Beam;25
+Articuno;144;90;90;4;Ice;Flying;Ice Shard;12;Blizzard;25
+Zapdos;145;90;90;4;Electric;Flying;Thunder Shock;15;Thunderbolt;20
+Moltres;146;90;90;4;Fire;Flying;Wing Attack;15;Fire Blast;25
+Dratini;147;41;41;6;Dragon;;Dragon Breath;15;Aqua Tail;18
+Dragonair;148;61;61;5;Dragon;;Dragon Breath;15;Dragon Pulse;22
+Dragonite;149;91;91;4;Dragon;Flying;Steel Wing;18;Hyper Beam;25
+Mewtwo;150;106;106;3;Psychic;;Confusion;15;Psychic;22
+Mew;151;100;100;3;Psychic;;Pound;12;Psychic;22
